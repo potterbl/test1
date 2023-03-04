@@ -1,24 +1,28 @@
-# for
+# Мой проект
 
-## Project setup
-```
+TI - это веб-приложение, написанное на фреймворке Vue. 
+Он представляет собой демо-версиб магазина, с возможностью добавить/удалить элемент корзины, внутри которого можно добавить/удалить продукты.
+
+## Функции
+
+- Добавление новой корзины
+- Удаление корзины
+- Добавление новых элементов внутри корзины
+- Удаление элементов внутри корзины
+- Сортировка обьектов магазина по их типу: Свободен, В ремонте, Занят
+
+## Установка проекта
+Откройте терминал и выполните команды для клонирования репозитория и установки зависимостей:
+
+git clone https://github.com/potterbl/TI.git
+cd TI
 npm install
-```
 
-### Compiles and hot-reloads for development
-```
+## Запуск проекта через NPM
+
 npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Запуск проекта через Docker
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- docker build -t ti .
+- docker run -p 8080:8080 ti
